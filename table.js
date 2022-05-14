@@ -8,22 +8,25 @@ function isiTabel() {
     kol1.innerHTML= document.getElementById("input-nama").value;
     kol2.innerHTML= document.getElementById("input-alamat").value;
     kol3.innerHTML= document.getElementById("input-username").value;
-    kol4.innerHTML = `<button style="border: #B4E197 solid 2px; border-radius: 5px;" onClick="onDelete();">Delete</button>`;
+    const btn = document.createElement("button");
+    btn.style.borderColor = "#B4E197";
+    btn.style.borderStyle = "solid";
+    btn.style.borderWidth = "2px";
+    btn.style.borderRadius = "5px";
+    btn.innerHTML = "Delete";
+    kol4.appendChild(btn);
+    kol4.addEventListener("click", function (e) {
+      const index = this.parentElement.rowIndex;
+      var c = confirm("Lanjut hapus data?");
+      if (c === true) {
+        table.deleteRow(index);
+        kol4.removeChild(btn);
+      }
+    });
 }
 
 function resetForm() {
     document.getElementById("input-nama").value = "";
     document.getElementById("input-alamat").value = "";
     document.getElementById("input-username").value = "";
-}
-
-function onDelete() {
-    if (confirm('Lanjut Hapus Data?')) {
-        for (var i=1; i<table.rows.length;i++){
-            var row = i;
-            document.getElementById("tabelKartu").deleteRow(row);
-            resetForm();
-        }
-        
-    }
 }
