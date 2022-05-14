@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #E8F9FD;">
+    <div style="background-color:#B4E197; font-size: 40px; font-family: Courier New; display: flex;
+    align-items: center;
+    justify-content: center; width: 50%; margin-top: 10px; margin-left: 25%;">Kartu Nama
+    </div>    
+    <br>
+    <div style="background-color:#E9EFC0; font-family: Courier New; margin-left: 10px; padding: 12px;display: flex; width: 50%; margin: 0 auto;">
+        <div style="margin-top: 0px; margin-left: 25%;">
+            <img id="image" src="https://media-exp1.licdn.com/dms/image/C5603AQHdgGWX7D739g/profile-displayphoto-shrink_200_200/0/1637252607080?e=1657756800&v=beta&t=yehTJXxNcBtwsQvI5TRf2CQO7_FOwmXNEz__m2y1yVE" 
+            alt="Foto Profil"
+            width="100" height="100" style="border-radius: 50%; border: #B4E197 solid 4px;">
+        </div>
+       <div style="margin-top: 1.5%; margin-left: 40px;">
+        <table>
+            <tr>
+              <th style="text-align: left;">Nama</th>
+              <td id="nama" style="padding-left: 15px;">Zulhamdani</td>
+            </tr>
+            <tr>
+              <th style="text-align: left;">Alamat</th>
+              <td id="alamat" style="padding-left: 16px;">Medan</td>
+            </tr>
+            <tr>
+              <th style="text-align: left;">Instagram</th>
+              <td  style="padding-left: 15px;"><a id="instagram" href="https://www.instagram.com/in/zulhamdani23/" style="text-decoration: none;"><p id="username" style="margin-top: 0;
+                margin-bottom: 0;">zulhamdani23</p></a></td>
+            </tr>
+          </table>
+        </div>
+       
+    </div>
+     <div style="background-color:#E9EFC0; font-family: Courier New; padding: 12px; width: 50%; margin: 50px auto; justify-content: center;">
+            <h3 style="text-align: center;">Mari kenalan</h3>
+            <form style="justify-content: center; text-align: center;">
+              <label style="text-align: left;">Nama</label><br>
+              <input type="text" id = "input-nama" required style="border: #B4E197 solid 2px; border-radius: 5px;" ><br><br>
+              <label>Alamat</label><br>
+              <input type="text" id = "input-alamat" required style="border: #B4E197 solid 2px; border-radius: 5px;" ><br><br>
+              <label>Instagram</label>
+              <!-- <input type="text" required style="border: #B4E197 solid 2px; border-radius: 5px;" ><br><br> -->
+              <div class="input-group flex-nowrap" style="width: 50%; margin: 0px auto; justify-content: center;border: #B4E197 solid 2px; border-radius: 5px;">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input id= "input-username" type="text" class="form-control"  aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <label>Jenis Kelamin
+                  <select name='Jenis Kelamin' style="font-family: Courier New; border: #B4E197 solid 2px; border-radius: 5px;" required>
+                      <option>Pria</option>
+                      <option>Wanita</option>
+                    </select>
+              </label><br><br>
+              <label>URL Foto Profil</label><br>
+              <input type="url" id = "input-image-url" required style="border: #B4E197 solid 2px; border-radius: 5px;" ><br><br>
+              <input type="checkbox" required style="border: #B4E197 solid 2px; border-radius: 5px;">
+              <label>Setuju kenalan</label><br><br>
+              <!-- Button trigger modal -->
+              <button onclick="buatIdentitas()" type="button" style="border-radius: 5%; background-color: #B4E197; font-family: Courier New; border: #B4E197 solid 5px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Kirim</button>
+            </form> 
+
+            
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Berhasil buat cardname</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div>
+        <h6 id="namadaftar" style="padding: 5%"></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" style="border: #B4E197 solid 2px; border-radius: 5px; background-color: #B4E197;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+            
+        
+</body>
+<script src="./cardname.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
