@@ -24,9 +24,3 @@ function isiTabel() {
       }
     });
 }
-
-// function resetForm() {
-//     document.getElementById("input-nama").value = "";
-//     document.getElementById("input-alamat").value = "";
-//     document.getElementById("input-username").value = "";
-// }
