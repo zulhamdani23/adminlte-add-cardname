@@ -15,7 +15,7 @@ function isiTabel() {
     btn.style.borderRadius = "5px";
     btn.innerHTML = "Delete";
     kol4.appendChild(btn);
-    kol4.addEventListener("click", function (e) {
+    kol4.addEventListener("click", function () {
       const index = this.parentElement.rowIndex;
       var c = confirm("Lanjut hapus data?");
       if (c === true) {
@@ -25,8 +25,8 @@ function isiTabel() {
     });
 }
 
-function resetForm() {
-    document.getElementById("input-nama").value = "";
-    document.getElementById("input-alamat").value = "";
-    document.getElementById("input-username").value = "";
-}
+// function resetForm() {
+//     document.getElementById("input-nama").value = "";
+//     document.getElementById("input-alamat").value = "";
+//     document.getElementById("input-username").value = "";
+// }
