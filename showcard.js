@@ -27,35 +27,35 @@ function isiTabel() {
 
     // const kol5 = document.createElement('div');
     // kol5.setAttribute('class', 'col-sm');
-    const show = document.createElement('button');
-    show.style.borderColor = "#B4E197";
-    show.style.borderStyle = "solid";
-    show.style.borderWidth = "2px";
-    show.style.borderRadius = "5px";
-    show.innerHTML = "show";
-    kol5.appendChild(show);
-    kol5.addEventListener('click', function(e){
-        var nama = document.getElementById("input-nama").value;
-        var alamat = document.getElementById("input-alamat").value;
-        var imageUrl = document.getElementById("input-image-url").value;
-        var user  = document.getElementById("input-username").value;
-        document.getElementById('nama').innerHTML = nama;
-        document.getElementById("alamat").innerHTML = alamat; 
-        document.getElementById("image").src=imageUrl;
-        document.getElementById("username").innerHTML = user;
-        document.getElementById("instagram").href = `https://www.instagram.com/in/${user}/`;
-        var modal = document.getElementById("myModal");
-        modal.style.display = "block";
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-        }
-        e.stopPropagation();
-    });
+    // const show = document.createElement('button');
+    // show.style.borderColor = "#B4E197";
+    // show.style.borderStyle = "solid";
+    // show.style.borderWidth = "2px";
+    // show.style.borderRadius = "5px";
+    // show.innerHTML = "show";
+    // kol5.appendChild(show);
+    // kol5.addEventListener('click', function(e){
+    //     var nama = document.getElementById("input-nama").value;
+    //     var alamat = document.getElementById("input-alamat").value;
+    //     var imageUrl = document.getElementById("input-image-url").value;
+    //     var user  = document.getElementById("input-username").value;
+    //     document.getElementById('nama').innerHTML = nama;
+    //     document.getElementById("alamat").innerHTML = alamat; 
+    //     document.getElementById("image").src=imageUrl;
+    //     document.getElementById("username").innerHTML = user;
+    //     document.getElementById("instagram").href = `https://www.instagram.com/in/${user}/`;
+    //     var modal = document.getElementById("myModal");
+    //     modal.style.display = "block";
+    //     var span = document.getElementsByClassName("close")[0];
+    //     span.onclick = function() {
+    //         modal.style.display = "none";
+    //     }
+    //     window.onclick = function(event) {
+    //         if (event.target == modal) {
+    //           modal.style.display = "none";
+    //         }
+    //     }
+    //     e.stopPropagation();
+    // });
 }
 
