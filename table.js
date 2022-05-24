@@ -17,6 +17,7 @@ function isiTabel() {
     kol4.appendChild(btn);
     kol4.addEventListener("click", function () {
       const index = this.parentElement.rowIndex;
+      console.log(this);
       var c = confirm("Lanjut hapus data?");
       if (c === true) {
         table.deleteRow(index);
